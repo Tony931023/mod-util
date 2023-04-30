@@ -5,6 +5,8 @@
 // From SC
 void AdditemrmScripts();
 void AdditemuseScripts();
+void AddPvp_ffaScripts();
+void AddpromoScripts();
 
 
 
@@ -15,5 +17,7 @@ void Addmod_utilScripts()
 {
     AdditemrmScripts();
     AdditemuseScripts();
+    AddPvp_ffaScripts();
+    AddpromoScripts();
 }
 
