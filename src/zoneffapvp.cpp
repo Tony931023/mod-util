@@ -18,7 +18,7 @@ public:
     bool OnGossipHello(Player* player, Creature* creature) override
     {
                 
-        AddGossipItemFor(player, 0, "Ir a la Zona FFAPvP", GOSSIP_SENDER_MAIN, 500);
+        AddGossipItemFor(player, 0, "Probar Evento", GOSSIP_SENDER_MAIN, 500);
         player->PlayerTalkClass->SendGossipMenu(907, creature->GetGUID());
         return true;
     }
@@ -32,7 +32,7 @@ public:
                 //player->SetByteFlag(UNIT_FIELD_BYTES_2, 1, UNIT_BYTE2_FLAG_FFA_PVP);
                 // Update PvP State
                 
-				player->TeleportTo(571, 5827.525391f, 594.013245f, 571.533203f, 2.479597f);
+                player->SetPhaseMask(1,true);
                 /*player->pvpInfo.IsHostile = true;
                 player->pvpInfo.IsInHostileArea = true;
                 player->pvpInfo.IsInFFAPvPArea = true;
